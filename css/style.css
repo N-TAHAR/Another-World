@@ -1,0 +1,124 @@
+@font-face{
+  font-family: "Space";
+  src: url("/font/space.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header{
+  width: 100%;
+  height: 12%;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: "Space", cursive;
+  animation: slidetop 6s;
+}
+
+nav{
+  height: 100%;
+}
+
+nav ul{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100%;
+  font-size: 2.5em;
+}
+
+.najib{
+  animation: slide-njb 20s;
+}
+
+main{
+  height: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1{
+  font-family: "Space", cursive;
+  font-size: 3em;
+  background: rgba(0,0,0,0.9);
+  padding: 10px; 
+}
+
+div{
+  
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+}
+
+.welcome{
+  animation: growup 5s;
+  animation: showup 3s;
+}
+
+.welcome h1{
+  margin-left: 20px;
+  border-radius: 10px 0 0 10px;
+}
+
+.into{
+  animation: reveal 15s;
+  animation-fill-mode: forwards;
+}
+
+.into h1{
+  border-radius: 0 10px 10px 0;
+  animation: slidein 15s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-njb{
+  0% { margin-top:-800px; }
+  20% { margin-top:-800px; }
+  35% { margin-top:0px; }
+  100% { margin-top:0px; }
+}
+
+@keyframes showup {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@keyframes slidein {
+  0% { margin-left:-800px; }
+  20% { margin-left:-800px; }
+  35% { margin-left:0px; }
+  100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+  0% {opacity:0;width:0px;}
+  20% {opacity:1;width:0px;}
+  30% {width:770px;}
+  100% {opacity:1;width:770px;}
+}
+
+@keyframes slidetop{
+  0% { margin-top:-800px; }
+  20% { margin-top:-800px; }
+  35% { margin-top:0px; }
+  100% { margin-top:0px; }
+}
