@@ -31,21 +31,48 @@ header{
   animation: slidetop 6s;
 }
 
+/* Menu */
+
 nav{
   height: 100%;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
 nav ul{
   display: flex;
-  justify-content:center;
+  justify-content:space-between;
   align-items: center;
+  width: 95%;
   height: 100%;
   font-size: 2.5em;
 }
 
-.najib{
-  animation: slide-njb 20s;
+.triangle{
+  background: url("/img/triangle.png");
+  background-size: cover;
+  width: 63px;
+  height: 56px;
+  transform: rotate(90deg);
+  animation: slidein 25s;
 }
+
+.najib{
+  animation: slidetop 20s;
+}
+
+.triangle1{
+  background: url("/img/triangle.png");
+  background-size: cover;
+  width: 63px;
+  height: 56px;
+  transform: rotate(-90deg);
+  animation: slidereverse 25s;
+}
+
+/* Main */
 
 main{
   height: 88%;
@@ -62,15 +89,15 @@ h1{
   padding: 10px; 
 }
 
+/* 2 div to make the animation */
+
 div{
-  
   display: inline-block;
   overflow: hidden;
   text-align: center;
 }
 
 .welcome{
-  animation: growup 5s;
   animation: showup 3s;
 }
 
@@ -90,12 +117,7 @@ div{
   animation-fill-mode: forwards;
 }
 
-@keyframes slide-njb{
-  0% { margin-top:-800px; }
-  20% { margin-top:-800px; }
-  35% { margin-top:0px; }
-  100% { margin-top:0px; }
-}
+/* Keyframes  */
 
 @keyframes showup {
   0% {opacity:0;}
@@ -107,6 +129,13 @@ div{
   20% { margin-left:-800px; }
   35% { margin-left:0px; }
   100% { margin-left:0px; }
+}
+
+@keyframes slidereverse {
+  0% { margin-right:-200px; }
+  20% { margin-right:-200px; }
+  35% { margin-right:0px; }
+  100% { margin-right:0px; }
 }
 
 @keyframes reveal {
@@ -122,3 +151,7 @@ div{
   35% { margin-top:0px; }
   100% { margin-top:0px; }
 }
+
+
+
+
