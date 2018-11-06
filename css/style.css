@@ -114,9 +114,6 @@ div{
   animation: showup 3s;
 }
 
-.welcome h1{
-}
-
 .into{
   border-radius: 0 10px 10px 0;
   animation: reveal 15s;
@@ -162,19 +159,6 @@ div{
   35% { margin-top:0px; }
   100% { margin-top:0px; }
 }
-
-
-.page2{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 0 0 auto; 
-  background-color: rgba(0,0,0,0.9);
-
-}
-
 
 ::-webkit-scrolling {
   overflow: touch;
